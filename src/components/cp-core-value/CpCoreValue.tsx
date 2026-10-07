@@ -19,13 +19,13 @@ const CpCoreValue = ({ data }: CpCoreValueProps) => {
           {data.map((value) => (
             <div className="item-wrap" key={value.id}>
               <div className="item">
-                <div className="icon">
-                  <Image
+                <div className={`icon ${value.icon}`}>
+                  {/* <Image
                     src={value.icon}
                     alt={value.title}
                     width={50}
                     height={50}
-                  />
+                  /> */}
                 </div>
 
                 <h3 className="title">{value.title}</h3>
