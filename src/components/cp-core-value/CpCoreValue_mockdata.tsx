@@ -1,7 +1,7 @@
 export const coreValueData = {
-    tag: 'Our Core Values',
-    title: 'Our',
-    titleBold: 'Core Values',
+    tag: 'Safety',
+    title: 'Safety',
+    titleBold: 'First',
     description:
         'The principles that guide our operations and define our company culture',
 

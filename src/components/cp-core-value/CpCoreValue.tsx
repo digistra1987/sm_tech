@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type CoreValue = {
   id: string;
@@ -13,38 +13,28 @@ type CpCoreValueProps = {
 
 const CpCoreValue = ({ data }: CpCoreValueProps) => {
   return (
-    <section
-      className="cp-core-value"
-      id="CpCoreValue"
-    >
+    <section className="cp-core-value" id="CpCoreValue">
       <div className="container">
-
         <div className="list">
           {data.map((value) => (
-            <div
-              className="item"
-              key={value.id}
-            >
-              <span className="number">
-                {value.id}
-              </span>
+            <div className="item-wrap" key={value.id}>
+              <div className="item">
+                <div className="icon">
+                  <Image
+                    src={value.icon}
+                    alt={value.title}
+                    width={50}
+                    height={50}
+                  />
+                </div>
 
-              <div className="icon">
-                <Image
-                  src={value.icon}
-                  alt={value.title}
-                  width={50}
-                  height={50}
-                />
+                <h3 className="title">{value.title}</h3>
+
+                <p className="desc">{value.description}</p>
               </div>
-
-              <h3>{value.title}</h3>
-
-              <p>{value.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

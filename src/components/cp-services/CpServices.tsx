@@ -44,7 +44,7 @@ const CpServices = ({ data, button }: CpServicesProps) => {
           <div className="services-action">
             <Link
               href={button.href}
-              className="btn-default"
+              className="btn-default btn-primary"
             >
               {button.label}
             </Link>

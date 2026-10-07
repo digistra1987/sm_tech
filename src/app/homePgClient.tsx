@@ -56,16 +56,6 @@ export default function HomePageClient() {
       />
       <BsSec
         showHead={true}
-        secTag={coreValueData.tag}
-        secTitle={coreValueData.title}
-        secTitleBoldTxt={coreValueData.titleBold}
-        secDesc={coreValueData.description}
-        secCont={
-          <CpCoreValue data={coreValueData.values} />
-        }
-      />
-      <BsSec
-        showHead={true}
         secTag={capabilitiesData.tag}
         secTitle={capabilitiesData.title}
         secTitleBoldTxt={capabilitiesData.titleBold}
