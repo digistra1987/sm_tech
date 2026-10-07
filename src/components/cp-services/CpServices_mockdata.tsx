@@ -8,14 +8,14 @@ export const serviceData = {
     services: [
         {
             id: '01',
-            title: 'Category IV Inspections',
+            title: 'Mechanical project & maintenance',
             description:
                 'Comprehensive inspections and remedials for oil and gas equipment, ensuring compliance and safety.',
             icon: 'icon-category',
         },
         {
             id: '02',
-            title: 'Oil & Gas Projects',
+            title: 'Fire Fighting project & Services',
             description:
                 'End-to-end project management for upstream, midstream, and downstream operations.',
             icon: 'icon-oil-gas-projects',
@@ -29,11 +29,18 @@ export const serviceData = {
         },
         {
             id: '04',
-            title: 'Crewing Services',
+            title: 'Electrical project & services',
             description:
                 'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
             icon: 'icon-vision',
         },
+        // {
+        //     id: '05',
+        //     title: 'Quality Control Services',
+        //     description:
+        //         'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
+        //     icon: 'icon-mission',
+        // },
     ],
 
     button: {

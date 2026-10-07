@@ -28,7 +28,6 @@ export default function HomePageClient() {
         secCont={
           <CpServices
             data={serviceData.services}
-            button={serviceData.button}
           />
         }
       />
