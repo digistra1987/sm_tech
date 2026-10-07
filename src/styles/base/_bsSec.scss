@@ -8,6 +8,8 @@
   }
   .sec-head {
     text-align: center;
+    z-index: 1;
+    position: relative;
     .sec-tag {
       font-family: $font-light;
       font-size: 1.4rem;
@@ -83,6 +85,39 @@
         color: $clr-root;
         width: 100%;
       }
+    }
+  }
+  &.typ-capabilities{
+    position: relative;
+    &:before{
+      content: '';
+      background: rgba(1, 70, 188, 8%);
+      // height: 62rem;
+      height: 60%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .sec-head{
+      text-align: left;
+      margin-bottom: 0.8rem;
+      .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .title-wrap{
+        width: 50%;
+      }
+      .sec-desc{
+         width: 50%;
+      }
+    }
+    .sec-cont{
+      z-index: 1;
+      position: relative;
     }
   }
 }

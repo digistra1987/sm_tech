@@ -2,7 +2,7 @@ export const companyOverviewData = {
     tag: 'Our Company Overview',
 
     title: 'Comprehensive',
-    titleBold: 'Oil And Gas Services',
+    secTitleBoldTxt: 'Oil And Gas Services',
 
     description: (
         <>

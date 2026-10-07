@@ -56,6 +56,7 @@ export default function HomePageClient() {
       />
       <BsSec
         showHead={true}
+        secTypeClass={'typ-capabilities'}
         secTag={capabilitiesData.tag}
         secTitle={capabilitiesData.title}
         secTitleBoldTxt={capabilitiesData.titleBold}

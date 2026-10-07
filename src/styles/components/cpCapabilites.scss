@@ -1,0 +1,88 @@
+@use "../tokens/config" as *;
+@use "../tokens/variables" as *;
+
+.cp-capabilities {
+    .capabilities-tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 3.2rem;
+        .capability-tab {
+            width: 100%;
+            background: rgba(0, 84, 165, 24%);
+            border: 1px solid rgba(2, 37, 129, 40%);
+            border-radius: 1.8rem;
+            text-align: center;
+            padding: 2.1rem 1rem;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            color: $clr-primary;
+            transition: all 0.5s ease-in-out;
+            &.active {
+                background: #0054a5;
+                border: 1px solid #0054a5;
+                color: $clr-root;
+            }
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        background: #eeeff2;
+        padding: 5.1rem 3rem;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(0, 84, 165, 50%);
+        display: flex;
+        justify-content: space-around;
+        gap: 5rem;
+        .card-zigzag {
+            clip-path: polygon(0 100%, 0 75%, 25% 20%, 50% 75%, 75% 20%, 100% 75%, 100% 100%);
+            z-index: 3;
+            background: $clr-root;
+            width: calc(100% + 4px);
+            height: 37px;
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+        }
+    }
+
+    .content-wrap{
+        width: 50%;
+        .title{
+            font-family: $font-bold;
+            font-size: 4rem;
+            line-height: 4.5rem;
+            color: #0054A5;
+            margin-bottom: 1.6rem;
+        }
+        .description{
+            font-family: $font-regular;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: $clr-desc;
+            margin-bottom: 2.4rem;
+        }
+        .list{
+            .item{
+                padding: 0 0 1.5rem 3.5rem;
+                position: relative;
+                color: #333333;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                position: relative;
+                &:after{
+                    content: "\e908";
+                    font-family: 'icomoon';
+                    color: #333333;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

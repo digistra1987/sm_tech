@@ -24,6 +24,7 @@ const BsSec = (prop: props) => {
                 title={prop.secTitle ?? ""}
                 secTitleBoldTxt={prop.secTitleBoldTxt ?? ''}
                 desc={prop.secDesc ?? ""}
+                secTypeClass={prop.secTypeClass ?? ''}
               />
             </div>
           </div>

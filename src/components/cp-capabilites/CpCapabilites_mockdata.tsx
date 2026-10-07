@@ -22,6 +22,7 @@ export const capabilitiesData = {
                 'Equipment failure investigations',
                 'Remedial action planning and execution',
             ],
+            image: '/assets/images/Union.png'
         },
 
         {
@@ -38,6 +39,7 @@ export const capabilitiesData = {
                 'Project planning and execution',
                 'Operational coordination',
             ],
+            image: '/assets/images/Union.png'
         },
 
         {
@@ -54,6 +56,7 @@ export const capabilitiesData = {
                 'API 16C equipment',
                 'Inspection and certification',
             ],
+            image: '/assets/images/Union.png'
         },
 
         {
@@ -70,6 +73,7 @@ export const capabilitiesData = {
                 'Technical specialists',
                 'Operational support',
             ],
+            image: '/assets/images/Union.png'
         },
 
         {
@@ -86,6 +90,7 @@ export const capabilitiesData = {
                 'Process optimization',
                 'Technology integration',
             ],
+            image: '/assets/images/Union.png'
         },
     ],
 };
