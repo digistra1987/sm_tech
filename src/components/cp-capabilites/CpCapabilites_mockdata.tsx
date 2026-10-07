@@ -8,72 +8,67 @@ export const capabilitiesData = {
 
     tabs: [
         {
-            id: 'category-iv',
-            label: 'CATEGORY IV',
-            title: 'CATEGORY IV Inspections & Remedials',
+            id: 'quality-control-services',
+            label: 'Quality Control Services',
+            title: 'Quality Control Services',
             description:
-                'Comprehensive inspection and remedial services for oil and gas equipment',
+                'Comprehensive inspection and quality control services ensuring asset integrity, regulatory compliance, and safe operations.',
 
             points: [
-                'Pressure vessel inspections',
-                'Pipeline integrity assessments',
+                "Mechanical equipment's inspections",
+                'Hardness and corrosion testing',
                 'Non-destructive testing (NDT)',
-                'Corrosion monitoring and analysis',
-                'Equipment failure investigations',
-                'Remedial action planning and execution',
             ],
-            image: '/assets/images/Union.png'
+
+            image: '/assets/images/Union.png',
         },
 
         {
-            id: 'oil-gas-projects',
-            label: 'Oil & Gas Projects',
-            title: 'Oil & Gas Projects',
+            id: 'project',
+            label: 'Project',
+            title: 'Project',
             description:
-                'End-to-end project management and execution services for critical oil and gas operations.',
+                'End-to-end project management and execution solutions supporting mechanical, electrical, plumbing and fire fighting operations.',
 
             points: [
-                'Upstream project management',
-                'Midstream operations support',
-                'Downstream project services',
-                'Project planning and execution',
-                'Operational coordination',
+                'Project planning and management',
+                'Engineering and technical support',
+                'Fabrication and machining',
             ],
-            image: '/assets/images/Union.png'
+
+            image: '/assets/images/Union.png',
         },
 
         {
-            id: 'equipment-recertification',
-            label: 'Equipment Re-certification',
-            title: 'Equipment Re-certification',
+            id: 'equipment-calibration',
+            label: 'Equipment Calibration',
+            title: 'Equipment Calibration',
             description:
-                'Comprehensive equipment inspection and re-certification services to ensure operational reliability and compliance.',
+                'Professional inspection, testing, and calibration services for critical equipment, helping ensure operational reliability and compliance.',
 
             points: [
-                'API 6A equipment',
-                'API 16A equipment',
-                'API 16D equipment',
-                'API 16C equipment',
-                'Inspection and certification',
+                'Measuring instrument',
             ],
-            image: '/assets/images/Union.png'
+
+            image: '/assets/images/Union.png',
         },
 
         {
-            id: 'crewing',
-            label: 'Crewing Services',
-            title: 'Crewing Services',
+            id: 'facility-services',
+            label: 'Facility Services',
+            title: 'Facility Services',
             description:
-                'Highly skilled personnel deployment for offshore and onshore industrial operations.',
+                'Efficient management and upkeep of buildings, workplaces and common areas to ensure smooth daily operations.',
 
             points: [
-                'Skilled manpower deployment',
-                'Offshore personnel',
-                'Onshore personnel',
-                'Technical specialists',
-                'Operational support',
+                'Maintenance and operations',
+                'Safety and Security Support',
+                'Housekeeping and Hygiene services',
+                'Pest Control Management',
+                'Waste Management',
             ],
-            image: '/assets/images/Union.png'
+
+            image: '/assets/images/Union.png',
         },
 
         {
@@ -81,16 +76,15 @@ export const capabilitiesData = {
             label: 'Digital Solutions',
             title: 'Digital Solutions',
             description:
-                'Technology-driven solutions designed to improve operational visibility, efficiency, and decision-making.',
+                'Technology-driven solutions designed to improve operational visibility, asset management, compliance, and efficiency across modern energy operations.',
 
             points: [
-                'Digital inspection solutions',
-                'Operational data management',
-                'Digital reporting',
-                'Process optimization',
-                'Technology integration',
+                'Digital asset monitoring',
+                'Equipment and inspection data management',
+                'Compliance documentation',
             ],
-            image: '/assets/images/Union.png'
+
+            image: '/assets/images/Union.png',
         },
     ],
 };
