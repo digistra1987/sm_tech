@@ -33,6 +33,7 @@ export default function HomePageClient() {
       />
       <BsSec
         showHead={false}
+        secTypeClass={'typ-aboutUs'}
         secCont={
           <CpAboutUs />
         }

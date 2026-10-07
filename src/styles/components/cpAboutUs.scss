@@ -2,5 +2,36 @@
 @use "../tokens/variables" as *;
 
 .cp-about-us{
-
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+        .lhs{
+            width: 45%;
+        }
+        .rhs{
+            width: 50%;
+        }
+    }
+     .highlight-list{
+            .highlight-item{
+                padding: 0 0 1.5rem 3rem;
+                position: relative;
+                color: #333333;
+                font-size: 2rem;
+                line-height: 3rem;
+                position: relative;
+                &:after{
+                    content: "\e908";
+                    font-family: 'icomoon';
+                    color: #333333;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                }
+            }
+        }
 }

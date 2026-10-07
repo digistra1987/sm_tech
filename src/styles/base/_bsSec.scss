@@ -36,6 +36,7 @@
       }
       .sec-titleBold {
         font-family: $font-bold;
+        color: $clr-primary;
         font-weight: 700;
       }
     }
@@ -87,10 +88,10 @@
       }
     }
   }
-  &.typ-capabilities{
+  &.typ-capabilities {
     position: relative;
-    &:before{
-      content: '';
+    &:before {
+      content: "";
       background: rgba(1, 70, 188, 8%);
       // height: 62rem;
       height: 60%;
@@ -100,24 +101,31 @@
       left: 0;
       z-index: 0;
     }
-    .sec-head{
+    .sec-head {
       text-align: left;
       margin-bottom: 0.8rem;
-      .container{
+      .container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
       }
-      .title-wrap{
+      .title-wrap ,
+      .sec-desc {
         width: 50%;
       }
-      .sec-desc{
-         width: 50%;
-      }
     }
-    .sec-cont{
+    .sec-cont {
       z-index: 1;
       position: relative;
+    }
+  }
+  &.typ-aboutUs {
+    background: rgba(1, 70, 188, 8%);
+    .sec-head {
+      text-align: left;
+      .sec-desc {
+        width: 100%;
+      }
     }
   }
 }

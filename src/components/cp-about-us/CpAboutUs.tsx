@@ -8,51 +8,36 @@ const CpAboutUs = () => {
         <div className="wrapper">
 
           {/* Left Content */}
-          <div className="content">
-
-            <span className="tag">
-              {aboutUsData.tag}
-            </span>
-
-            <h2>
-              {aboutUsData.title}{' '}
-              <strong>{aboutUsData.titleBold}</strong>
-            </h2>
-
-            <p className="description">
-              {aboutUsData.description}
-            </p>
-
-            <div className="experience">
-              <strong>
-                {aboutUsData.experience.value}
-              </strong>
-
-              <span>
-                {aboutUsData.experience.label}
-              </span>
+          <div className="lhs">
+            <div
+              className={`sec-head`}
+            >
+              {aboutUsData.tag && <span className={"sec-tag"}>{aboutUsData.tag}</span>}
+              {aboutUsData.title && <h2 className={"sec-title"}>
+                {aboutUsData.title} <span className={"sec-titleBold"}>{aboutUsData.secTitleBoldTxt}</span>
+              </h2>
+              }
+              {aboutUsData.description && <p className="sec-desc">{aboutUsData.description}</p>}
             </div>
-
+            <div className={`sec-cont`}>
+              <ul className='highlight-list'>
+                {aboutUsData.highlights.map((item, index) => (
+                  <li
+                    className="highlight-item"
+                    key={index}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-
           {/* Right Content */}
-          <div className="highlights">
-
-            {aboutUsData.highlights.map((item, index) => (
-              <div
-                className="highlight"
-                key={index}
-              >
-                <span className="highlight-number">
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-
-                <p>{item}</p>
-              </div>
-            ))}
-
+          <div className="rhs">
+            <div className='img-wrap'>
+              <img src={aboutUsData.backgroundImage} alt={aboutUsData.title} />
+            </div>
           </div>
-
         </div>
 
       </div>
