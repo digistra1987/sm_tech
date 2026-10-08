@@ -11,7 +11,7 @@ const CpFooter = () => {
     href: string
   ) => {
     e.preventDefault();
-    scrollToSection(href, isMobile ? 90 : 150);
+    scrollToSection(href, isMobile ? 90 : 60);
   };
 
   return (

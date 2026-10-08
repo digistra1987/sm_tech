@@ -84,6 +84,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_up:before {
+  content: "\e910";
+}
 .icon-check:before {
   content: "\e908";
 }

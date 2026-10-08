@@ -16,7 +16,7 @@ export default function CpHeader() {
     href: string
   ) => {
     e.preventDefault();
-    scrollToSection(href, isMobile ? 90 : 150);
+    scrollToSection(href, isMobile ? 90 : 60);
     setIsMenuOpen(false);
   };
 

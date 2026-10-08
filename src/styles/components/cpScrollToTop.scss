@@ -1,0 +1,78 @@
+@use "../tokens/config" as *;
+@use "../tokens/variables" as *;
+
+.cp-scroll-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 50%;
+    background: $clr-root;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0 10px 3px #022581bf;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    @media only screen and (max-width: $media-mobile) {
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+
+    .icon {
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid $clr-primary;
+        border-bottom: 2px solid $clr-primary;
+        transform: translateX(-50%) rotate(225deg);
+        display: block;
+    }
+
+    .unu,
+    .doi {
+        animation: mouse-scroll 1s infinite alternate;
+    }
+
+    .unu {
+        top: 10px;
+        animation-delay: 0s;
+    }
+
+    .doi {
+        top: 16px;
+        animation-delay: 0.2s;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

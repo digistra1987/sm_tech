@@ -13,8 +13,7 @@ import CpCapabilites from '@/components/cp-capabilites/CpCapabilites';
 import { capabilitiesData } from '@/components/cp-capabilites/CpCapabilites_mockdata';
 import CpGetInTouch from '@/components/cp-get-in-touch/CpGetInTouch';
 import CpFooter from '@/components/cp-footer/CpFooter';
-
-
+import CpScrollToTop from '@/components/cp-scroll-to-top/CpScrollToTop';
 
 export default function HomePageClient() {
   return (
@@ -33,7 +32,7 @@ export default function HomePageClient() {
           <CpServices
             data={serviceData.services}
           />
-        }
+        } 
       />
       <BsSec
         id={'about'}
@@ -85,6 +84,7 @@ export default function HomePageClient() {
         }
       />
       <CpFooter/>
+      <CpScrollToTop />
     </>
   );
 }
