@@ -2,5 +2,10 @@
 @use "../tokens/variables" as *;
 
 .cp-company-overview{
+    .content-wrap{
+        width: 100%;
+        max-width: 50%;
+        margin: 0 0 0 auto;
+    }
 
 }
