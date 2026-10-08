@@ -19,8 +19,6 @@ export const footerData = {
   ],
   description:
     'Leading provider of comprehensive rig and project services for the oil and gas industry worldwide.',
-
-
   quickLinksData: {
     title: 'Quick Links',
 
@@ -42,7 +40,6 @@ export const footerData = {
       },
     ],
   },
-
   servicesLinksData: {
     link: [
       {
@@ -79,7 +76,6 @@ export const footerData = {
   },
   contactInfoData : {
     title: 'Contact Info',
-
     address: {
       icon: 'icon-address',
       label: 'Address:',
@@ -100,5 +96,5 @@ export const footerData = {
     },
   },
 
-  copyright: '© 2026 MY COMPANY. All Rights Reserved.',
+  copyright: '©2026 smtech service. All rights reserved.',
 };

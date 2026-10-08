@@ -18,7 +18,7 @@
     display: flex;
     z-index: 2;
     position: relative;
-    padding: 6.4rem 0;
+    padding: 6.4rem 0 2rem;
     justify-content: space-between;
   }
   .info-wrap {
@@ -130,6 +130,17 @@
       color: $clr-root;
       font-family: $font-regular;
       width: 75%;
+    }
+  }
+  .bottom {
+    border-top: 1px solid $clr-root;
+    padding: 1.8rem 0 2rem;
+    position: relative;
+    z-index: 1;
+    .copyright {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      color: $clr-root;
     }
   }
 }

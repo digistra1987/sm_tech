@@ -21,7 +21,7 @@ export default function CpHeader() {
   };
 
   return (
-    <div className="cp-header">
+    <header className="cp-header">
       <Link href="/" className={'logo'}>
         <Image src="/assets/images/logo.png" alt="Logo" width={178} height={30} />
       </Link>
@@ -41,6 +41,6 @@ export default function CpHeader() {
           ))}
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
