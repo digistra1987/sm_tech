@@ -30,11 +30,12 @@
       @media only screen and (max-width: $media-mobile) {
         font-size: 3.2rem;
         line-height: 4.2rem;
-        color: $clr-primary;
+        
       }
       .sec-titleBold {
         font-family: $font-bold;
         font-weight: 700;
+        color: $clr-primary;
       }
     }
 
