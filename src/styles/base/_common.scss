@@ -5,6 +5,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
   @media (min-width: 1024px) and (max-width: 1200px) {
     font-size: 8.2px;
   }
@@ -69,7 +70,6 @@ p {
     line-height: 1.8rem;
   }
 }
-
 .cm-not-in-page {
   position: absolute;
   left: -99999px;

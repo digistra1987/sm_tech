@@ -23,7 +23,6 @@ const CpCapabilites = ({ data }: CapabilitesProps) => {
   return (
     <section
       className="cp-capabilities"
-      id="capabilities"
     >
       <div className="container">
         {/* Tabs */}

@@ -22,6 +22,7 @@ export default function HomePageClient() {
       <CpHeader />
       <CpBanner />
       <BsSec
+        id={"services"}
         showHead={true}
         secTag={serviceData.tag}
         secTitle={serviceData.title}
@@ -34,6 +35,7 @@ export default function HomePageClient() {
         }
       />
       <BsSec
+        id={'about'}
         showHead={false}
         secTypeClass={'typ-aboutUs'}
         secCont={
@@ -41,6 +43,7 @@ export default function HomePageClient() {
         }
       />
       <BsSec
+        id={'companyoverview'}
         showHead={false}
         secTypeClass={'typ-company-overview'}
         secCont={
@@ -48,6 +51,7 @@ export default function HomePageClient() {
         }
       />
       <BsSec
+        id={'corevalue'}
         showHead={true}
         secTag={coreValueData.tag}
         secTitle={coreValueData.title}
@@ -58,6 +62,7 @@ export default function HomePageClient() {
         }
       />
       <BsSec
+        id={'capabilities'}
         showHead={true}
         secTypeClass={'typ-capabilities'}
         secTag={capabilitiesData.tag}
@@ -71,6 +76,7 @@ export default function HomePageClient() {
         }
       />
       <BsSec
+        id={"getInTouch"}
         showHead={false}
         secTypeClass={'typ-get-in-touch'}
         secCont={

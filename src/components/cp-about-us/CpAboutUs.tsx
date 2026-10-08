@@ -2,7 +2,7 @@ import { aboutUsData } from './CpAboutUs_mockdata';
 
 const CpAboutUs = () => {
   return (
-    <section className="cp-about-us" id="about">
+    <section className="cp-about-us">
       <div className="container">
 
         <div className="wrapper">

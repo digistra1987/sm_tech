@@ -13,7 +13,7 @@ type CpCoreValueProps = {
 
 const CpCoreValue = ({ data }: CpCoreValueProps) => {
   return (
-    <section className="cp-core-value" id="CpCoreValue">
+    <section className="cp-core-value">
       <div className="container">
         <div className="list">
           {data.map((value) => (

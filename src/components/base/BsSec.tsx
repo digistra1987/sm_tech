@@ -8,12 +8,13 @@ type props = {
   secTitleBoldTxt?: string;
   secDesc?: string;
   secCont?: React.ReactNode;
+  id?: string;
 };
 
 const BsSec = (prop: props) => {
   return (
     <>
-      <div className={`bs-sec ${prop.secTypeClass || ""}`}>
+      <section className={`bs-sec ${prop.secTypeClass || ""}`} id={`${prop.id || ""}`}>
         {prop.showHead && (
           <div
             className={`sec-head`}
@@ -32,7 +33,7 @@ const BsSec = (prop: props) => {
         <div className={`sec-cont`}>
           {prop.secCont}
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -124,7 +124,7 @@ const CpGetInTouch = () => {
   };
 
   return (
-    <section className="cp-get-in-touch" id="CpGetInTouch"  >
+    <div className="cp-get-in-touch">
       <div className="container">
         <div
           className={`sec-head`}
@@ -248,7 +248,7 @@ const CpGetInTouch = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

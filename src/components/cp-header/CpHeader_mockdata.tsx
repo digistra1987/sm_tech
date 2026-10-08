@@ -14,14 +14,9 @@ export const headerMenu = [
     label: 'Portfolio',
     href: '#portfolio',
   },
-  // {
-  //   id: 4,
-  //   label: 'Photo Gallery',
-  //   href: '#gallery',
-  // },
   {
-    id: 5,
+    id: 4,
     label: 'Contact Us',
-    href: '#contact',
+    href: '#getInTouch',
   },
 ];

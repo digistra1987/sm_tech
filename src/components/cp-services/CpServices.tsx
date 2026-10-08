@@ -18,7 +18,7 @@ type CpServicesProps = {
 const CpServices = ({ data, button }: CpServicesProps) => {
   return (
     <div className={'container'}>
-      <div className="cp-services" id="services">
+      <div className="cp-services">
 
         <div className="services-list">
           {data.map((service) => (

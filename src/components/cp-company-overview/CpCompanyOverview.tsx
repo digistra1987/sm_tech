@@ -4,7 +4,6 @@ const CpCompanyOverview = () => {
   return (
     <section
       className="cp-company-overview"
-      id="companyoverview"
     >
       <div className="container">
         <div className='wrapper'>

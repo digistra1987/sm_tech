@@ -1,8 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { footerData } from './CpFooter_mockdata';
+import { scrollToSection } from '@/utils/scrollToSection';
+import { useDeviceType } from '@/utils/isMobile';
 
 const CpFooter = () => {
+  const { isMobile } = useDeviceType();
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    scrollToSection(href, isMobile ? 90 : 150);
+  };
+
   return (
     <footer className="cp-footer">
       <div className="container">
@@ -51,7 +62,7 @@ const CpFooter = () => {
               <ul className="link-list">
                 {footerData.quickLinksData.links.map((item) => (
                   <li className="link-item" key={item.id}>
-                    <Link className="link" href={item.href}>
+                    <Link className="link" href={item.href} onClick={(e) => handleNavClick(e, item.href)}>
                       {item.label}
                     </Link>
                   </li>
@@ -115,17 +126,17 @@ const CpFooter = () => {
                   {footerData.contactInfoData.phone.label}
                 </span>
                 <div className="contact-value">
-                {footerData.contactInfoData.phone.value.map(
-                  (phone, index) => (
-                    <a className="contact-link"
-                      href={`tel:${phone.replace(/\s/g, '')}`}
-                      key={index}
-                    >
-                      {phone}
-                    </a>
-                  )
-                )}
-</div>
+                  {footerData.contactInfoData.phone.value.map(
+                    (phone, index) => (
+                      <a className="contact-link"
+                        href={`tel:${phone.replace(/\s/g, '')}`}
+                        key={index}
+                      >
+                        {phone}
+                      </a>
+                    )
+                  )}
+                </div>
               </div>
 
             </div>

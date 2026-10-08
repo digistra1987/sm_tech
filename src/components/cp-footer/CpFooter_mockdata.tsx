@@ -38,7 +38,7 @@ export const footerData = {
       {
         id: '04',
         label: 'Contact Us',
-        href: '#contact',
+        href: '#getInTouch',
       },
     ],
   },
