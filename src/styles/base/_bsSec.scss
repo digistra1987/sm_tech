@@ -63,6 +63,7 @@
       }
     }
   }
+  &.typ-company-overview,
   &.typ-get-in-touch {
     position: relative;
     overflow: hidden;
@@ -90,6 +91,16 @@
       }
     }
   }
+
+  &.typ-company-overview{
+    background:
+      linear-gradient(90deg, rgba(1, 67, 183, 0) 0%, rgba(2, 37, 129, 1) 100%),
+      url("/assets/images/companyOverviewBanner.png");
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   &.typ-capabilities {
     position: relative;
     &:before {

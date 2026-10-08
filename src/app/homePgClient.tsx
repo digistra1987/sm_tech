@@ -40,6 +40,7 @@ export default function HomePageClient() {
       />
       <BsSec
         showHead={false}
+        secTypeClass={'typ-company-overview'}
         secCont={
           <CpCompanyOverview />
         }
