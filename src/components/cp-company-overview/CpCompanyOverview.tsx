@@ -7,7 +7,7 @@ const CpCompanyOverview = () => {
       id="companyoverview"
     >
       <div className="container">
-        <div className='content-wrap'>
+        <div className='wrapper'>
           <div
             className={`sec-head`}
           >
@@ -27,28 +27,29 @@ const CpCompanyOverview = () => {
 
             <div className="overview-card">
               <span className={`icon ${companyOverviewData.vision.icon}`}>
-
               </span>
+              <div className='content-wrap'>
+                <h3 className="title">
+                  {companyOverviewData.vision.title}
+                </h3>
+                <p className='description'>
+                  {companyOverviewData.vision.description}
+                </p>
+              </div>
 
-              <h3>
-                {companyOverviewData.vision.title}
-              </h3>
-
-              <p>
-                {companyOverviewData.vision.description}
-              </p>
             </div>
 
             <div className="overview-card-card">
               <span className={`icon ${companyOverviewData.mission.icon}`}></span>
+              <div className='content-wrap'>
+                <h3 className="title">
+                  {companyOverviewData.mission.title}
+                </h3>
 
-              <h3>
-                {companyOverviewData.mission.title}
-              </h3>
-
-              <p>
-                {companyOverviewData.mission.description}
-              </p>
+                <p className='description'>
+                  {companyOverviewData.mission.description}
+                </p>
+              </div>
             </div>
 
           </div>
