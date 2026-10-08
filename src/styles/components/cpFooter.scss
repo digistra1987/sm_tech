@@ -45,9 +45,10 @@
   .quick-link-wrap {
     display: flex;
     justify-content: space-between;
+    align-content: space-around;
     width: 100%;
     .quick-link {
-      padding: 0 1rem;
+      padding-right: 3rem;
     }
     .link-title {
       font-size: 2rem;
@@ -58,7 +59,7 @@
       margin-bottom: 2.4rem;
     }
     .link-item {
-      margin-botton: 1.6rem;
+      margin-bottom: 1.6rem;
       .link {
         font-size: 1.6rem;
         line-height: 3rem;
@@ -94,7 +95,7 @@
         margin-right: 0.8rem;
         .icon {
           font-size: 2.4rem;
-          line-height: 2.4rem;
+          line-height: 3rem;
           color: $clr-root;
         }
       }
@@ -116,9 +117,9 @@
         display: block;
       }
     }
-    .contact-label{
-      font-size: 2rem;
-      line-height: 2.2rem;
+    .contact-label {
+      font-size: 1.6rem;
+      line-height: 3rem;
       color: $clr-root;
       font-family: $font-regular;
       margin-right: 1rem;
@@ -128,7 +129,7 @@
       line-height: 2rem;
       color: $clr-root;
       font-family: $font-regular;
-      width: 70%;
+      width: 75%;
     }
   }
 }
