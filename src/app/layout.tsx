@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import "animate.css";
 import "./globals.scss";
+import WowInit from "@/app/WowInit";
 
 const siteUrl = "https://sm-tech-two.vercel.app/";
 
@@ -123,24 +125,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(websiteSchema),
-          }}
-        />
-      </head>
-
-      <body>{children}</body>
-    </html>
+    <>
+      <html lang="en">
+        <head>       
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(organizationSchema),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(websiteSchema),
+            }}
+          />
+        </head>
+        <WowInit />
+        <body>{children}</body>
+      </html>
+    </>
   );
 }
