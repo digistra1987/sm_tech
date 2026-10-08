@@ -34,13 +34,13 @@ export const serviceData = {
                 'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
             icon: 'icon-vision',
         },
-        // {
-        //     id: '05',
-        //     title: 'Quality Control Services',
-        //     description:
-        //         'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
-        //     icon: 'icon-mission',
-        // },
+        {
+            id: '05',
+            title: 'Quality Control Services',
+            description:
+                'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
+            icon: 'icon-mission',
+        },
     ],
 
     button: {

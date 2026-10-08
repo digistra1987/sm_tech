@@ -23,6 +23,7 @@ export default function HomePageClient() {
       <CpBanner />
       <BsSec
         id={"services"}
+        secTypeClass={'typ-services'}
         showHead={true}
         secTag={serviceData.tag}
         secTitle={serviceData.title}
