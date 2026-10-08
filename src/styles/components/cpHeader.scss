@@ -14,9 +14,25 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-height: 8rem;
   z-index: 1000;
+  @media only screen and (max-width: $media-mobile) {
+    justify-content: center;
+    min-height: 5rem;
+    padding: 2rem;
+  }
+  .logo {
+    img {
+      height: 100%;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      max-width: 14rem;
+    }
+  }
   .navigation {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $media-mobile) {
+      display: none;
+    }
     .nav-list {
       display: flex;
       gap: 3.2rem;
@@ -37,4 +53,3 @@
     }
   }
 }
-  
