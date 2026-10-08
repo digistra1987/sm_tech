@@ -1,6 +1,6 @@
 export const footerData = {
   logo: {
-    image: '../../../public/assets/images/logo.png',
+    image: '../../../public/assets/images/footer-logo.png',
     href: '/',
   },
   socialLink: [
@@ -36,11 +36,6 @@ export const footerData = {
         href: '#services',
       },
       {
-        id: '03',
-        label: 'Photo Gallery',
-        href: '#gallery',
-      },
-      {
         id: '04',
         label: 'Contact Us',
         href: '#contact',
@@ -62,16 +57,21 @@ export const footerData = {
       },
       {
         id: '03',
-        label: 'Equipment Re-certification',
+        label: 'Equipment',
         href: '#capabilities',
       },
-      {
+       {
         id: '04',
-        label: 'Crewing Services',
+        label: 'Re-certification',
         href: '#capabilities',
       },
       {
         id: '05',
+        label: 'Crewing Services',
+        href: '#capabilities',
+      },
+      {
+        id: '06',
         label: 'Digital Solutions',
         href: '#capabilities',
       },
@@ -90,13 +90,13 @@ export const footerData = {
     phone: {
       icon: '../../../public/globe.svg',
       label: 'Phone:',
-      value: ['022-2284 0074', '022-22047987'],
+      value: ['+91 9321210789 ', '+91 9975640804'],
     },
 
     email: {
       icon: '../../../public/globe.svg',
       label: 'Email:',
-      value: 'scholar@thescholarschool.org',
+      value: ['sales@smtechservices.co.in', 'smtechservices2025@gmail.com'],
     },
   },
 

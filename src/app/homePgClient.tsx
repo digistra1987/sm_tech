@@ -75,7 +75,7 @@ export default function HomePageClient() {
           <CpGetInTouch />
         }
       />
-      {/* <CpFooter/> */}
+      <CpFooter/>
     </>
   );
 }
