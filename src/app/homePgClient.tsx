@@ -28,12 +28,12 @@ export default function HomePageClient() {
         secCont={
           <CpServices
             data={serviceData.services}
-            button={serviceData.button}
           />
         }
       />
       <BsSec
         showHead={false}
+        secTypeClass={'typ-aboutUs'}
         secCont={
           <CpAboutUs />
         }
@@ -56,6 +56,7 @@ export default function HomePageClient() {
       />
       <BsSec
         showHead={true}
+        secTypeClass={'typ-capabilities'}
         secTag={capabilitiesData.tag}
         secTitle={capabilitiesData.title}
         secTitleBoldTxt={capabilitiesData.titleBold}

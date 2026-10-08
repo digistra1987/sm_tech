@@ -2,15 +2,10 @@ export const aboutUsData = {
     tag: 'About Our Company',
 
     title: 'Why Choose',
-    titleBold: 'SM Tech?',
+    secTitleBoldTxt: 'SM Tech?',
 
     description:
-        'With over 15 years of excellence in the oil and gas sector, we deliver unmatched expertise and reliability.',
-
-    experience: {
-        value: '15 +',
-        label: 'years of experience',
-    },
+        'Excellence in the oil and gas sector, we deliver unmatched expertise and reliability.',
 
     highlights: [
         'Certified professionals with extensive industry experience',
@@ -19,5 +14,5 @@ export const aboutUsData = {
         'Global reach with local expertise',
     ],
 
-    backgroundImage: '/assets/images/banner.png',
+    backgroundImage: '/assets/images/aboutCompany.png',
 };

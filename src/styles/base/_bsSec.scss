@@ -8,6 +8,8 @@
   }
   .sec-head {
     text-align: center;
+    z-index: 1;
+    position: relative;
     .sec-tag {
       font-family: $font-light;
       font-size: 1.4rem;
@@ -34,6 +36,7 @@
       }
       .sec-titleBold {
         font-family: $font-bold;
+        color: $clr-primary;
         font-weight: 700;
         color: $clr-primary;
       }
@@ -44,18 +47,19 @@
       line-height: 3rem;
       color: $clr-desc;
       width: 35%;
-    margin: 0px auto 2.4rem;
-    .sec-desc{
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      color: $clr-desc;
-      font-family: $font-light;
-      width: 30%;
-      margin: 0px auto;
-      @media only screen and (max-width: $media-mobile) {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-        color: $clr-primary;
+      margin: 0px auto 2.4rem;
+      .sec-desc {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $clr-desc;
+        font-family: $font-light;
+        width: 30%;
+        margin: 0px auto;
+        @media only screen and (max-width: $media-mobile) {
+          font-size: 1.4rem;
+          line-height: 2.2rem;
+          color: $clr-primary;
+        }
       }
     }
   }
@@ -79,10 +83,51 @@
       }
 
       .sec-title,
+      .sec-titleBold,
       .sec-desc {
         color: $clr-root;
+        width: 100%;
       }
     }
   }
-}
+  &.typ-capabilities {
+    position: relative;
+    &:before {
+      content: "";
+      background: rgba(1, 70, 188, 8%);
+      // height: 62rem;
+      height: 60%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .sec-head {
+      text-align: left;
+      margin-bottom: 0.8rem;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .title-wrap ,
+      .sec-desc {
+        width: 50%;
+      }
+    }
+    .sec-cont {
+      z-index: 1;
+      position: relative;
+    }
+  }
+  &.typ-aboutUs {
+    background: rgba(1, 70, 188, 8%);
+    .sec-head {
+      text-align: left;
+      .sec-desc {
+        width: 100%;
+      }
+    }
+  }
 }

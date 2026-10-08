@@ -8,32 +8,39 @@ export const serviceData = {
     services: [
         {
             id: '01',
-            title: 'Category IV Inspections',
+            title: 'Mechanical project & maintenance',
             description:
                 'Comprehensive inspections and remedials for oil and gas equipment, ensuring compliance and safety.',
-            icon: '/images/services/category-inspection.svg',
+            icon: 'icon-category',
         },
         {
             id: '02',
-            title: 'Oil & Gas Projects',
+            title: 'Fire Fighting project & Services',
             description:
                 'End-to-end project management for upstream, midstream, and downstream operations.',
-            icon: '/images/services/oil-gas-projects.svg',
+            icon: 'icon-oil-gas-projects',
         },
         {
             id: '03',
             title: 'Equipment Recertification',
             description:
                 'API 6A, 16A, 16D, 16C equipment re-certification services with industry-leading expertise.',
-            icon: '/images/services/equipment-recertification.svg',
+            icon: 'icon-safety-first',
         },
         {
             id: '04',
-            title: 'Crewing Services',
+            title: 'Electrical project & services',
             description:
                 'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
-            icon: '/images/services/crewing-services.svg',
+            icon: 'icon-vision',
         },
+        // {
+        //     id: '05',
+        //     title: 'Quality Control Services',
+        //     description:
+        //         'Highly skilled personnel deployment for offshore and onshore operations worldwide.',
+        //     icon: 'icon-mission',
+        // },
     ],
 
     button: {

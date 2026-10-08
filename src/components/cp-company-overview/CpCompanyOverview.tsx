@@ -7,32 +7,26 @@ const CpCompanyOverview = () => {
       id="companyoverview"
     >
       <div className="container">
-
-        {/* Heading */}
-        <div className="header">
-          <span className="eyebrow">
-            {companyOverviewData.tag}
-          </span>
-
-          <h2>
-            {companyOverviewData.title}{' '}
-            <strong>
-              {companyOverviewData.titleBold}
-            </strong>
-          </h2>
+        <div
+          className={`sec-head`}
+        >
+          <div className='lhs'>
+            {companyOverviewData.tag && <span className={"sec-tag"}>{companyOverviewData.tag}</span>}
+            {companyOverviewData.title && <h2 className={"sec-title"}>
+              {companyOverviewData.secTitleBoldTxt} <span className={"sec-titleBold"}>{companyOverviewData.secTitleBoldTxt}</span>
+            </h2>
+            }
+          </div>
+          <div className='rhs'>
+          {companyOverviewData.description && <p className="sec-desc">{companyOverviewData.description}</p>}
+          </div>
         </div>
-
-        {/* Company Description */}
-        <div className="intro">
-          <p>{companyOverviewData.description}</p>
-        </div>
-
         {/* Vision & Mission */}
-        <div className="grid">
+        <div className="overview-card-grid">
 
-          <div className="card">
-            <span className="number">
-              01
+          <div className="overview-card">
+            <span className={`icon ${companyOverviewData.vision.icon}`}>
+
             </span>
 
             <h3>
@@ -44,10 +38,8 @@ const CpCompanyOverview = () => {
             </p>
           </div>
 
-          <div className="card">
-            <span className="number">
-              02
-            </span>
+          <div className="overview-card-card">
+            <span className={`icon ${companyOverviewData.mission.icon}`}></span>
 
             <h3>
               {companyOverviewData.mission.title}
@@ -59,7 +51,6 @@ const CpCompanyOverview = () => {
           </div>
 
         </div>
-
       </div>
     </section>
   );
