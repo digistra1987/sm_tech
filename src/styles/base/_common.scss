@@ -63,7 +63,7 @@ p {
   font-size: 2rem;
   line-height: 2.2rem;
   font-family: $font-regular;
-  color:#333;
+  color: #333;
   text-transform: initial;
   @media only screen and (max-width: $media-mobile) {
     font-size: 1.4rem;
@@ -171,3 +171,87 @@ p {
 .hide {
   display: none !important;
 }
+
+
+/* Initial state */
+.wow {
+  visibility: hidden;
+}
+
+.wow.animated {
+  visibility: visible;
+}
+
+/* Reveal from bottom */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fadeInUp.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reveal from left */
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fadeInLeft.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Reveal from right */
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fadeInRight.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom reveal */
+.zoomIn {
+  opacity: 0;
+  transform: scale(0.94);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.zoomIn.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.highlight-item.wow {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    visibility 0s linear 0.7s;
+}
+
+.highlight-item.wow.animated {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+

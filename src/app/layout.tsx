@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "animate.css";
 import "./globals.scss";
-import WowInit from "@/app/WowInit";
+import WowInit from "./Wowinit";
 
 const siteUrl = "https://sm-tech-two.vercel.app/";
 
@@ -141,8 +141,12 @@ export default function RootLayout({
             }}
           />
         </head>
-        <WowInit />
-        <body>{children}</body>
+        
+        <body>
+          <WowInit />
+          {children}
+
+        </body>
       </html>
     </>
   );

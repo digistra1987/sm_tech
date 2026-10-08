@@ -25,7 +25,7 @@ type CpServicesProps = {
 const CpServices = ({ data, button }: CpServicesProps) => {
   return (
     <div className="container">
-      <div className="cp-services">
+      <div className="cp-services wow fadeInUp " data-wow-duration="5s" data-wow-delay="10s">
         <div className="services-list">
           <Swiper className='bs-swiper typ-services'
             modules={[Navigation]}

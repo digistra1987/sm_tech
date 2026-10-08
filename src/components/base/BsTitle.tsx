@@ -13,9 +13,9 @@ const BsTitle = (prop: Props) => {
     <>
       {prop.secTypeClass === 'typ-capabilities' ? (
         <div className="title-wrap">
-          {prop.tag && <span className="sec-tag">{prop.tag}</span>}
+          {prop.tag && <span className="sec-tag wow fadeInUp" data-wow-duration="5s" data-wow-delay="10s">{prop.tag}</span>}
           {prop.title && (
-            <h2 className="sec-title">
+            <h2 className="sec-title wow fadeInUp" data-wow-duration="5s" data-wow-delay="10s">
               {prop.title}{' '}
               <span className="sec-titleBold">
                 {prop.secTitleBoldTxt}
@@ -25,9 +25,9 @@ const BsTitle = (prop: Props) => {
         </div>
       ) : (
         <>
-          {prop.tag && <span className="sec-tag">{prop.tag}</span>}
+          {prop.tag && <span className="sec-tag wow fadeInUp" data-wow-duration="5s" data-wow-delay="10s">{prop.tag}</span>}
           {prop.title && (
-            <h2 className="sec-title">
+            <h2 className="sec-title wow fadeInUp" data-wow-duration="5s" data-wow-delay="10s">
               {prop.title}{' '}
               <span className="sec-titleBold">
                 {prop.secTitleBoldTxt}

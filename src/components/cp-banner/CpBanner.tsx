@@ -18,8 +18,7 @@ const CpBanner = () => {
         <div className="banner-wrap">
 
           <h2
-            className="banner-title wow animate__swing"
-            data-wow-duration="5s"
+            className="banner-title wow fadeInUp " data-wow-duration="5s" data-wow-delay="10s"
           >
             {bannerData.title}
             <span className="bold">
@@ -29,16 +28,16 @@ const CpBanner = () => {
 
           <p
             className="banner-desc wow fadeInUp"
-            data-wow-delay="0.2s"
-            data-wow-duration="0.8s"
+            data-wow-delay="10s"
+            data-wow-duration="20s"
           >
             {bannerData.description}
           </p>
 
           <div
             className="act-wrap wow fadeInUp"
-            data-wow-delay="0.4s"
-            data-wow-duration="0.8s"
+            data-wow-delay="12s"
+            data-wow-duration="25s"
           >
             <button
               className="btn-default"
