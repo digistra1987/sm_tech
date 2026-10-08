@@ -2,38 +2,42 @@
 
 .bs-swiper {
   position: relative;
-  .swiper-wrapper{
+  .swiper-wrapper {
     padding-bottom: 6rem;
   }
-  
+
   .swiper-pagination {
     z-index: 6 !important;
   }
   .swiper-button-next,
-  .swiper-button-prev{
-    svg{
+  .swiper-button-prev {
+    svg {
       display: none !important;
     }
-    &::before{
-      content:'\e90d';
-      font-family: 'icomoon';
+    &::before {
+      content: "\e90d";
+      font-family: "icomoon";
       color: $clr-primary;
       font-size: 2.5rem;
       line-height: 3rem;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
     }
   }
-  .swiper-button-next{
+  .swiper-button-next {
     bottom: 0 !important;
     top: auto !important;
+    @media only screen and (max-width: $media-mobile) {
+      right: 2rem !important;
+    }
   }
-  .swiper-button-prev{
+  .swiper-button-prev {
     bottom: 0 !important;
     top: auto !important;
     transform: rotate(180deg);
     right: 7rem !important;
     left: auto !important;
-  }
-  &.typ-services{
-
   }
 }

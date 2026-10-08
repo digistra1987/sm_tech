@@ -13,26 +13,35 @@
     max-width: 29.8rem;
     padding: 2.6rem;
     position: relative;
+    @media only screen and (max-width: $media-mobile) {
+      min-height: 31rem;
+    }
     .icon {
-      width: 4rem;
-      height: 4rem;
       display: block;
       color: $clr-primary;
       font-size: 4rem;
       line-height: 4rem;
       margin-bottom: 3rem;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+      }
     }
     .service-number {
       position: absolute;
       top: 4px;
       right: 12px;
-      font-size: 90px;
+      font-size: 9rem;
       line-height: 1;
       font-weight: 500;
       color: rgba(255, 255, 255, 0.24);
       letter-spacing: -5px;
       font-family: $font-bold;
       font-weight: 700;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 8rem;
+      }
     }
     .service-title {
       font-size: 2.4rem;
@@ -43,6 +52,10 @@
       font-family: $font-bold;
       font-weight: 700;
       width: 92%;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
     .service-desc {
       font-size: 1.6rem;
@@ -50,6 +63,10 @@
       color: $clr-desc;
       font-family: $font-light;
       font-weight: 300;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
     }
     .card-zigzag {
       position: absolute;

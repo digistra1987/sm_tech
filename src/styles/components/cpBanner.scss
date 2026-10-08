@@ -8,6 +8,11 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  @media only screen and (max-width: $media-mobile) {
+    height: 50rem;
+    margin-top: 10rem;
+    background-position: right;
+  }
   .banner-wrap {
     position: absolute;
     top: 50%;
@@ -22,20 +27,30 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 1.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 3.4rem;
+        line-height: 5rem;
+      }
       .bold {
         font-family: $font-bold;
         font-weight: 700;
         width: 100%;
       }
     }
-    .banner-desc{
-        width: 47%;
-        font-size: 2rem;
-        line-height: 3.2rem;
-        color: $clr-root;
-        margin-bottom: 6.4rem;
-        font-family: $font-bold;
-        font-weight: 700;
+    .banner-desc {
+      width: 47%;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      color: $clr-root;
+      margin-bottom: 6.4rem;
+      font-family: $font-bold;
+      font-weight: 700;
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        width: 90%;
+      }
     }
   }
 }

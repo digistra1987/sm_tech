@@ -22,6 +22,12 @@
       display: inline-block;
       border-radius: 1.8rem;
       text-transform: uppercase;
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        padding: .5rem 1.5rem;
+      }
     }
     .sec-title {
       font-size: 4.8rem;
@@ -30,8 +36,9 @@
       font-family: $font-regular;
       margin-bottom: 1.6rem;
       @media only screen and (max-width: $media-mobile) {
-        font-size: 3.2rem;
-        line-height: 4.2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
       }
       .sec-titleBold {
         font-family: $font-bold;
@@ -49,10 +56,11 @@
       width: 30%;
       margin: 0px auto 2.4rem;
       @media only screen and (max-width: $media-mobile) {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
         color: $clr-primary;
         width: 100%;
+        margin: 0px auto 2rem;
       }
     }
   }
@@ -62,7 +70,7 @@
     position: relative;
     overflow: hidden;
 
-    background:
+    background-image:
       linear-gradient(90deg, rgba(1, 67, 183, 0) 0%, rgba(2, 37, 129, 1) 100%),
       url("/assets/images/getInTouchBanner.jpg");
 
@@ -87,12 +95,15 @@
   }
 
   &.typ-company-overview {
-    background:
+    background-image:
       linear-gradient(90deg, rgba(1, 67, 183, 0) 0%, rgba(2, 37, 129, 1) 100%),
       url("/assets/images/companyOverviewBanner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media only screen and (max-width: $media-mobile) {
+      background-image: linear-gradient(12deg, #0143b700 0%, #022581 100%), url(/assets/images/companyOverviewBanner.png);
+    }
   }
 
   &.typ-capabilities {
@@ -136,10 +147,12 @@
     }
   }
   &.typ-services {
+    .sec-cont{
     .container {
       @media only screen and (max-width: $media-mobile) {
         padding-right: 0;
       }
     }
+  }
   }
 }
