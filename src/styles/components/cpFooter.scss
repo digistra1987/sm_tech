@@ -47,7 +47,7 @@
     justify-content: space-between;
     width: 100%;
     .quick-link {
-      padding: 0 3rem;
+      padding: 0 1rem;
     }
     .link-title {
       font-size: 2rem;
@@ -89,6 +89,7 @@
     }
     .contact-item {
       display: flex;
+      margin-bottom: 1rem;
       .contact-icon {
         margin-right: 0.8rem;
         .icon {
@@ -105,12 +106,14 @@
       color: $clr-root;
       font-family: $font-bold;
       font-weight: 700;
+      width: 100%;
       .contact-link {
         font-size: 1.6rem;
         line-height: 3rem;
         color: $clr-root;
-        font-family: $font-bold;
+        font-family: $font-regular;
         font-weight: 700;
+        display: block;
       }
     }
     .contact-label{
@@ -118,12 +121,14 @@
       line-height: 2.2rem;
       color: $clr-root;
       font-family: $font-regular;
+      margin-right: 1rem;
     }
     .contact-value {
-      font-size: 2rem;
-      line-height: 2.2rem;
+      font-size: 1.6rem;
+      line-height: 2rem;
       color: $clr-root;
       font-family: $font-regular;
+      width: 70%;
     }
   }
 }

@@ -153,20 +153,21 @@ const CpFooter = () => {
                 <span className="contact-label">
                   {footerData.contactInfoData.email.label}
                 </span>
-
-                <a
-                  href={`mailto:${footerData.contactInfoData.email.value}`}
-                  className="contact-link"
-                >
-                  {footerData.contactInfoData.email.value}
-                </a>
-
+                <div className="contact-value">
+                  {footerData.contactInfoData.email.value.map(
+                    (email, index) => (
+                      <a
+                        href={`mailto:${footerData.contactInfoData.email.value}`}
+                        className="contact-link" key={index}
+                      >
+                        {email}
+                      </a>
+                    )
+                  )}
+                </div>
               </div>
-
             </div>
-
           </div>
-
         </div>
 
         {/* Footer Bottom */}
