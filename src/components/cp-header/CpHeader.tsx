@@ -8,21 +8,26 @@ export default function CpHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className={'cp-header'}>
-        <Link href="/" className={'logo'}>
-          <Image src="/assets/images/logo.png" alt="Logo" width={178} height={30} />
-        </Link>
-        <div   className={'navigation'}>
-          <ul className={'nav-list'}>
-            {headerMenu.map((item) => (
-              <li className={'nav-item'} key={item.id}>
-                <Link className={'nav-link'} href={item.href}>
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-    </div>
+    <header className="cp-header">
+      <Link href="/" className={'logo'}>
+        <Image src="/assets/images/logo.png" alt="Logo" width={178} height={30} />
+      </Link>
+
+      <div className="navigation">
+        <ul className="nav-list">
+          {headerMenu.map((item) => (
+            <li className="nav-item" key={item.id}>
+              <a
+                className="nav-link"
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </header>
   );
 }
