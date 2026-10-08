@@ -26,7 +26,7 @@
         font-size: 1.2rem;
         line-height: 2rem;
         margin-bottom: 1rem;
-        padding: .5rem 1.5rem;
+        padding: 0.5rem 1.5rem;
       }
     }
     .sec-title {
@@ -102,7 +102,8 @@
     background-position: center;
     background-repeat: no-repeat;
     @media only screen and (max-width: $media-mobile) {
-      background-image: linear-gradient(12deg, #0143b700 0%, #022581 100%), url(/assets/images/companyOverviewBanner.png);
+      background-image:
+        linear-gradient(12deg, #0143b700 0%, #022581 100%), url(/assets/images/companyOverviewBanner.png);
     }
   }
 
@@ -126,15 +127,24 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
       }
       .title-wrap,
       .sec-desc {
         width: 50%;
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
       }
     }
     .sec-cont {
       z-index: 1;
       position: relative;
+      .container {
+        @media only screen and (max-width: $media-mobile) {
+          padding-right: 0;
+        }
+      }
     }
   }
   &.typ-aboutUs {
@@ -147,12 +157,12 @@
     }
   }
   &.typ-services {
-    .sec-cont{
-    .container {
-      @media only screen and (max-width: $media-mobile) {
-        padding-right: 0;
+    .sec-cont {
+      .container {
+        @media only screen and (max-width: $media-mobile) {
+          padding-right: 0;
+        }
       }
     }
-  }
   }
 }
