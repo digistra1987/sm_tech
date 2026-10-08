@@ -3,7 +3,9 @@
 import HomePageClient from "./homePgClient";
 import "animate.css"
 export default function Home() {
+  
   return (
+    
     <HomePageClient />
   );
 }

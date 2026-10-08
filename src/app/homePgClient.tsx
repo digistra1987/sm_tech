@@ -14,6 +14,8 @@ import { capabilitiesData } from '@/components/cp-capabilites/CpCapabilites_mock
 import CpGetInTouch from '@/components/cp-get-in-touch/CpGetInTouch';
 import CpFooter from '@/components/cp-footer/CpFooter';
 
+
+
 export default function HomePageClient() {
   return (
     <>
