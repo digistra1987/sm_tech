@@ -39,7 +39,7 @@ const CpCompanyOverview = () => {
 
             </div>
 
-            <div className="overview-card-card">
+            <div className="overview-card">
               <span className={`icon ${companyOverviewData.mission.icon}`}></span>
               <div className='content-wrap'>
                 <h3 className="title">

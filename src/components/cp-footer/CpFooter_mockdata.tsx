@@ -5,15 +5,15 @@ export const footerData = {
   },
   socialLink: [
     {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-facebook',
       href: '/'
     },
     {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-linked-In',
       href: '/'
     },
     {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-twitter',
       href: '/'
     }
   ],
@@ -81,20 +81,20 @@ export const footerData = {
     title: 'Contact Info',
 
     address: {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-address',
       label: 'Address:',
       value:
         '13, Henry Road, Apollo Reclamation, Colaba, Mumbai - 400001',
     },
 
     phone: {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-phone',
       label: 'Phone:',
       value: ['+91 9321210789 ', '+91 9975640804'],
     },
 
     email: {
-      icon: '../../../public/globe.svg',
+      icon: 'icon-e-mail',
       label: 'Email:',
       value: ['sales@smtechservices.co.in', 'smtechservices2025@gmail.com'],
     },

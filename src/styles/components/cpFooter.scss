@@ -11,11 +11,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(2, 37, 129, 0) 0%,
-      rgba(2, 37, 129, 0.88) 0%
-    );
     z-index: 1;
   }
   .footer-wrap {
@@ -39,10 +34,11 @@
     .desc {
       font-size: 1.6rem;
       line-height: 3rem;
-      color: #fff;
+      color: $clr-root;
       font-family: $font-bold;
       font-weight: 700;
       width: 36rem;
+      margin-bottom: 1.6rem;
     }
   }
   .quick-link-wrap {
@@ -61,15 +57,24 @@
       margin-bottom: 2.4rem;
     }
     .link-item {
-        margin-botton: 1.6rem;
+      margin-botton: 1.6rem;
       .link {
         font-size: 1.6rem;
         line-height: 3rem;
         color: $clr-root;
         font-family: $font-bold;
         font-weight: 700;
-        
       }
+    }
+  }
+  .social-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.6rem;
+    .icon {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      color: $clr-root;
     }
   }
   .contact-info-wrap {
@@ -84,8 +89,12 @@
     .contact-item {
       display: flex;
       .contact-icon {
-        width: 2.4rem;
-        height: 2.4rem;
+        margin-right: 0.8rem;
+        .icon {
+          font-size: 2.4rem;
+          line-height: 2.4rem;
+          color: $clr-root;
+        }
       }
     }
     .contact-content {
@@ -95,14 +104,25 @@
       color: $clr-root;
       font-family: $font-bold;
       font-weight: 700;
-      margin-left: 1.6rem;
-      .contact-link{
+      .contact-link {
         font-size: 1.6rem;
-      line-height: 3rem;
-      color: $clr-root;
-      font-family: $font-bold;
-      font-weight: 700;
+        line-height: 3rem;
+        color: $clr-root;
+        font-family: $font-bold;
+        font-weight: 700;
       }
+    }
+    .contact-label{
+      font-size: 2rem;
+      line-height: 2.2rem;
+      color: $clr-root;
+      font-family: $font-regular;
+    }
+    .contact-value {
+      font-size: 2rem;
+      line-height: 2.2rem;
+      color: $clr-root;
+      font-family: $font-regular;
     }
   }
 }

@@ -23,7 +23,7 @@ const CpFooter = () => {
               {footerData.description}
             </p>
             {/* Social Links */}
-            <div className="social-link">
+            <div className="social-list">
               {footerData.socialLink.map((social, index) => (
                 <Link
                   href={social.href}
@@ -32,12 +32,13 @@ const CpFooter = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
+                  <span className={`icon ${social.icon}`}></span>
+                  {/* <Image
                     src={social.icon}
                     alt="Social Media"
                     width={24}
                     height={24}
-                  />
+                  /> */}
                 </Link>
               ))}
             </div>
@@ -86,12 +87,7 @@ const CpFooter = () => {
             <div className="contact-item">
 
               <div className="contact-icon">
-                <Image
-                  src="/globe.svg"
-                  alt="Address"
-                  width={20}
-                  height={20}
-                />
+                <span className={`icon ${footerData.contactInfoData.address.icon}`}></span>
               </div>
 
               <div className="contact-content">
@@ -110,12 +106,7 @@ const CpFooter = () => {
             <div className="contact-item">
 
               <div className="contact-icon">
-                <Image
-                  src="/globe.svg"
-                  alt="Phone"
-                  width={20}
-                  height={20}
-                />
+                <span className={`icon ${footerData.contactInfoData.phone.icon}`}></span>
               </div>
 
               <div className="contact-content">
@@ -143,12 +134,7 @@ const CpFooter = () => {
             <div className="contact-item">
 
               <div className="contact-icon">
-                <Image
-                  src="/globe.svg"
-                  alt="Email"
-                  width={20}
-                  height={20}
-                />
+                <span className={`icon ${footerData.contactInfoData.email.icon}`}></span>
               </div>
 
               <div className="contact-content">
