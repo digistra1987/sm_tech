@@ -140,6 +140,7 @@ export default function RootLayout({
               __html: JSON.stringify(websiteSchema),
             }}
           />
+          <link rel="icon" href="./favicon.ico" sizes="any" />
         </head>
         
         <body>
