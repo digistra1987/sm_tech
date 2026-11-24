@@ -1,39 +1,37 @@
 import BsTitle from './BsTitle';
+import type { ReactNode } from 'react';
 
-type props = {
+type Props = {
   secTypeClass?: string;
   showHead?: boolean;
   secTag?: string;
   secTitle?: string;
   secTitleBoldTxt?: string;
   secDesc?: string;
-  secCont?: React.ReactNode;
+  secCont?: ReactNode;
 };
 
-const BsSec = (prop: props) => {
+const BsSec = (prop: Props) => {
   return (
-    <>
-      <div className={`bs-sec ${prop.secTypeClass || ""}`}>
-        {prop.showHead && (
-          <div
-            className={`sec-head`}
-          >
-            <div className="container">
-              <BsTitle
-                tag={prop.secTag ?? ""}
-                title={prop.secTitle ?? ""}
-                secTitleBoldTxt={prop.secTitleBoldTxt ?? ''}
-                desc={prop.secDesc ?? ""}
-                secTypeClass={prop.secTypeClass ?? ''}
-              />
-            </div>
+    <div className={`bs-sec ${prop.secTypeClass || ''}`}>
+      {prop.showHead && (
+        <div className="sec-head">
+          <div className="container">
+            <BsTitle
+              tag={prop.secTag ?? ''}
+              title={prop.secTitle ?? ''}
+              secTitleBoldTxt={prop.secTitleBoldTxt ?? ''}
+              desc={prop.secDesc ?? ''}
+              secTypeClass={prop.secTypeClass ?? ''}
+            />
           </div>
-        )}
-        <div className={`sec-cont`}>
-          {prop.secCont}
         </div>
+      )}
+
+      <div className="sec-cont">
+        {prop.secCont}
       </div>
-    </>
+    </div>
   );
 };
 
