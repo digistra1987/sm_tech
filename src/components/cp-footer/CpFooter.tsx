@@ -155,7 +155,7 @@ const CpFooter = () => {
                 </span>
                 <div className="contact-value">
                   {footerData.contactInfoData.email.value.map(
-                    (email, index) => (
+                    (email:string, index: number) => (
                       <a
                         href={`mailto:${footerData.contactInfoData.email.value}`}
                         className="contact-link" key={index}
