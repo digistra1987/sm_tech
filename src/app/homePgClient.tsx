@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import BsSec from '@/components/base/BsSec';
 import CpHeader from '../components/cp-header/CpHeader';
@@ -20,6 +20,7 @@ export default function HomePageClient() {
     <>
       <CpHeader />
       <CpBanner />
+
       <BsSec
         id={"services"}
         secTypeClass={'typ-services'}
@@ -34,14 +35,14 @@ export default function HomePageClient() {
           />
         } 
       />
+
       <BsSec
         id={'about'}
         showHead={false}
-        secTypeClass={'typ-aboutUs'}
-        secCont={
-          <CpAboutUs />
-        }
+        secTypeClass="typ-aboutUs"
+        secCont={<CpAboutUs />}
       />
+
       <BsSec
         id={'companyoverview'}
         showHead={false}
@@ -50,6 +51,7 @@ export default function HomePageClient() {
           <CpCompanyOverview />
         }
       />
+
       <BsSec
         id={'corevalue'}
         showHead={true}
@@ -57,31 +59,25 @@ export default function HomePageClient() {
         secTitle={coreValueData.title}
         secTitleBoldTxt={coreValueData.titleBold}
         secDesc={coreValueData.description}
-        secCont={
-          <CpCoreValue data={coreValueData.values} />
-        }
+        secCont={<CpCoreValue data={coreValueData.values} />}
       />
+
       <BsSec
         id={'capabilities'}
         showHead={true}
-        secTypeClass={'typ-capabilities'}
+        secTypeClass="typ-capabilities"
         secTag={capabilitiesData.tag}
         secTitle={capabilitiesData.title}
         secTitleBoldTxt={capabilitiesData.titleBold}
         secDesc={capabilitiesData.description}
-        secCont={
-          <CpCapabilites
-            data={capabilitiesData.tabs}
-          />
-        }
+        secCont={<CpCapabilites data={capabilitiesData.tabs} />}
       />
+
       <BsSec
         id={"getInTouch"}
         showHead={false}
-        secTypeClass={'typ-get-in-touch'}
-        secCont={
-          <CpGetInTouch />
-        }
+        secTypeClass="typ-get-in-touch"
+        secCont={<CpGetInTouch />}
       />
       <CpFooter/>
       <CpScrollToTop />
