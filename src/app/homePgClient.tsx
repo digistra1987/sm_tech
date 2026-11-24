@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import BsSec from '@/components/base/BsSec';
 import CpHeader from '../components/cp-header/CpHeader';
@@ -19,62 +19,53 @@ export default function HomePageClient() {
     <>
       <CpHeader />
       <CpBanner />
+
       <BsSec
         showHead={true}
         secTag={serviceData.tag}
         secTitle={serviceData.title}
         secTitleBoldTxt={serviceData.titleBold}
         secDesc={serviceData.description}
-        secCont={
-          <CpServices
-            data={serviceData.services}
-          />
-        }
+        secCont={<CpServices data={serviceData.services} />}
       />
+
       <BsSec
         showHead={false}
-        secTypeClass={'typ-aboutUs'}
-        secCont={
-          <CpAboutUs />
-        }
+        secTypeClass="typ-aboutUs"
+        secCont={<CpAboutUs />}
       />
+
       <BsSec
         showHead={false}
-        secCont={
-          <CpCompanyOverview />
-        }
+        secCont={<CpCompanyOverview />}
       />
+
       <BsSec
         showHead={true}
         secTag={coreValueData.tag}
         secTitle={coreValueData.title}
         secTitleBoldTxt={coreValueData.titleBold}
         secDesc={coreValueData.description}
-        secCont={
-          <CpCoreValue data={coreValueData.values} />
-        }
+        secCont={<CpCoreValue data={coreValueData.values} />}
       />
+
       <BsSec
         showHead={true}
-        secTypeClass={'typ-capabilities'}
+        secTypeClass="typ-capabilities"
         secTag={capabilitiesData.tag}
         secTitle={capabilitiesData.title}
         secTitleBoldTxt={capabilitiesData.titleBold}
         secDesc={capabilitiesData.description}
-        secCont={
-          <CpCapabilites
-            data={capabilitiesData.tabs}
-          />
-        }
+        secCont={<CpCapabilites data={capabilitiesData.tabs} />}
       />
+
       <BsSec
         showHead={false}
-        secTypeClass={'typ-get-in-touch'}
-        secCont={
-          <CpGetInTouch />
-        }
+        secTypeClass="typ-get-in-touch"
+        secCont={<CpGetInTouch />}
       />
-      <CpFooter/>
+
+      <CpFooter />
     </>
   );
 }
