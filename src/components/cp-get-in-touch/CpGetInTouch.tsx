@@ -221,7 +221,7 @@ const CpGetInTouch = () => {
             <div className="field-wrapper typ-full-width">
               <div className="field">
                 <textarea className="input-field" 
-                  id="message" rows="4" cols="50"
+                  id="message"
                   name="message"
                   placeholder="Your Message"
                   value={formValues.message}
